@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Web Development Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="quiz-container">
+    <section id="intro-screen">
+      <p class="eyebrow">LEARNING QUIZ</p>
+      <h1>Basic Web Development Quiz</h1>
+      <p class="description">
+        Test your knowledge of HTML, CSS, and JavaScript. Read each question
+        carefully and choose one answer.
+      </p>
+      <div class="instructions">
+        <h2>Quiz instructions</h2>
+        <ul>
+          <li>There are 5 multiple-choice questions.</li>
+          <li>Each question is worth 1 mark.</li>
+          <li>The total score is 5 marks.</li>
+          <li>You can choose only one answer for each question.</li>
+          <li>At the end, you will see your score and feedback.</li>
+        </ul>
+      </div>
+      <button id="start-btn">Start quiz</button>
+    </section>
+
+    <section id="quiz-screen" class="hidden">
+      <div class="quiz-top">
+        <span id="question-count">Question 1 of 5</span>
+        <span class="mark-label">1 mark</span>
+      </div>
+      <div class="progress-track"><div id="progress-bar"></div></div>
+      <h2 id="question-text"></h2>
+      <div id="answers" class="answers"></div>
+      <p id="feedback" class="feedback" aria-live="polite"></p>
+      <button id="next-btn" disabled>Next question</button>
+    </section>
+
+    <section id="result-screen" class="hidden">
+      <p class="eyebrow">QUIZ COMPLETED</p>
+      <h1>Your result</h1>
+      <p class="score" id="score-text">0 / 5</p>
+      <p id="result-message" class="description"></p>
+      <div class="result-details">
+        <p><strong>Marks for each question:</strong> 1</p>
+        <p><strong>Total possible marks:</strong> 5</p>
+        <p><strong>Your percentage:</strong> <span id="percentage">0%</span></p>
+      </div>
+      <button id="restart-btn">Try again</button>
+    </section>
+  </main>
+  <footer>Keep learning, keep growing.<br><strong>Made by Zala Sahil</strong></footer>
+  <script src="script.js"></script>
+</body>
+</html>
